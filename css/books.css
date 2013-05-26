@@ -1,0 +1,519 @@
+/******************************************
+********************************************
+
+Sermon Notes Stylesheet
+
+********************************************
+******************************************
+
+COLORS:
+
+Header Color: #2a3539
+Navigation Color: #4a4325
+Footer Color: #4a4325;
+
+*/
+
+@import "book-reset.css";
+
+/* fonts */
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic|Crimson+Text:400,400italic,600,600italic,700,700italic|Open+Sans:300italic,400italic,600italic,700italic,800italic,400,700,800,600,300);
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700);
+
+/*******************************************
+********************************************
+B  O  D  Y   &   D  E  F  A  U  L  T  S
+********************************************
+*******************************************/
+
+html,body                 { height: 100%; }
+body                      {
+  font-family: 'Open Sans',
+  sans-serif;
+  font-size: 85%;
+  font-size: 66%;
+  margin: 0 auto;
+  min-width: 1026px;
+  background: #ccc;
+}
+
+/* defaults  */
+
+h1,h2,h3,h4,h5 { font-weight: normal; }
+/*p { color: #000; font-size: 15px; line-height: 1.4 }*/
+a                         { color: #723e39; text-decoration: none; }
+a:hover                     { color: #723e39; text-decoration: underline; }
+a:visited                   { color: #582017; text-decoration: none; }
+.left                       { float: left; }
+.right                      { float: right; }
+.clear                      { clear: both; }
+/* clearfix */
+.clearfix:after                 { content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; }
+.clearfix                     { display: inline-block; }
+html[xmlns] .clearfix               { display: block; }
+* html .clearfix                { height: 1%; }
+
+.wrapper {
+  width: 99%;
+  width: 1000px;
+  margin: 0px auto;
+  background: #fff;
+  height: 765px;
+  max-height: 765px;
+  overflow: hidden;
+  /*background: url(book-template-small.png) left top no-repeat;*/
+  /*border: solid 1px red;*/
+  position: relative;
+  margin-bottom: 220px;
+  /*border: dotted 1px #eee;*/
+}
+
+body { background: none;}
+
+.wrapper div {
+  /*display: none;*/
+}
+
+.cover img {
+  width: 1000px;
+}
+
+.cover-info {
+  position: absolute;
+  bottom: 60px;
+  right: 50px;
+  color: #333333;
+}
+
+.cover-semester {
+  display: block;
+  font-family: "PT Sans";
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.cover-campus {
+  font-family: "Crimson Text";
+  font-style: italic;
+  font-size: 2em;
+}
+
+.table-of-contents {
+  width: 100%;
+  text-align: center;
+  /*border: solid 1px black;*/
+  padding-top: 30px;
+}
+
+.table-of-contents h2.label {
+  margin-top: 100px;
+  font-family: "Open Sans Condensed";
+  text-transform: uppercase;
+  color: #b6b6b6;
+  font-size: 30px;
+  margin-bottom: 60px;
+}
+
+.table-of-contents .table {
+  /*border: solid 1px;*/
+  width: 100%;
+  overflow: hidden;
+}
+
+.table-of-contents .table li {
+  float: left;
+  width: 90%;
+  margin: 1% 5%;
+  font-size: 1.3em;
+  font-family: "PT Sans";
+  padding-bottom: 5px;
+  border-bottom: dotted 1px #ddd;
+}
+
+.table-of-contents .table li .page {
+  float: left;
+}
+
+.table-of-contents .table li .page-number {
+  float: right;
+}
+
+#template {
+  position: absolute;
+  top: 12px;
+  left: 0;
+  opacity: 0;
+}
+
+#login-wrapper {
+  width: 300px;
+  margin: 0px auto;
+  padding: 20px;
+  background: #fff;
+  margin-top: 20px;
+  border-radius: 6px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+}
+
+#login-wrapper h2 {
+  font-size: 1.7em;
+  text-transform: uppercase;
+  font-family: "OpenSansBold";
+  /*margin: 0px auto; */
+  text-align: center;
+}
+
+#login-wrapper a {
+  display: block;
+  margin-top: 20px;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.table-of-contents {
+  width: 100%;
+  text-align: center;
+  /*border: solid 1px black;*/
+}
+
+.vision-page {
+  padding: 0 30px;
+  height: 640px;
+}
+
+.vision-page h2 {
+  font-family: "Open Sans";
+  font-size: 2.5em;
+  font-style: italic;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 120px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.vision-page p {
+  font-family: "PT Sans";
+  font-size: 1.4em;
+  line-height: 1.2;
+  margin-bottom: 1em;
+}
+
+.vision-page .scripture {
+  font-family: "Crimson Text";
+  font-style: italic;
+}
+
+
+.cell {
+  width: 100%;
+  height: 380px;
+  overflow: hidden;
+  position: relative;
+}
+
+.cell.topleft {
+  /*background: #ddd;*/
+}
+
+.cell.bottomleft {
+  /*background: #ccc;*/
+}
+
+.column {
+  position: relative;
+}
+
+.wrapper {
+  /*overflow: visible;*/
+}
+
+.column .page-num {
+  color: #333 !important;
+  font-size: 11px !important;
+  top: 10px !important;
+}
+
+.column .page-num-wrapper {
+  bottom: -26px !important;
+  border: none !important;
+
+}
+
+.column-left .page-num-wrapper {
+  font-family: "Open Sans Condensed";
+  background: transparent;
+  font-weight: bold;
+  /*background: #b2e0f8;*/
+  display: inline-block;
+  border-radius: 50em;
+  -webkit-border-radius: 50em;
+  height: 45px;
+  width: 45px;
+  position: absolute;
+  bottom: -28px;
+  left: -18px;
+  z-index: 999;
+  overflow: hidden;
+  border: solid 1px;
+}
+
+
+.column-left .page-num {
+  font-size: 1.2em;
+  /*color: #fff;*/
+  position: absolute;
+  right: 5px;
+  top: 10px;
+  display: block;
+  width: 18px;
+  text-align: center;
+  padding-right: 3px;
+  color: #333333;
+}
+
+.column-right .page-num-wrapper {
+  font-family: "Open Sans Condensed";
+  font-weight: bold;
+  /*background: #b2e0f8;*/
+  background: transparent;
+  display: inline-block;
+  border-radius: 50em;
+  height: 45px;
+  width: 45px;
+  position: absolute;
+  bottom: -20px;
+  right: -18px;
+  z-index: 1;
+  border: solid 1px;
+  overflow: hidden;
+  /*border: solid 1px;*/
+}
+
+.column .page-num-wrapper img {
+  position: absolute;
+  bottom: 0;
+  display: none;
+}
+
+.column-right .page-num {
+  font-size: 1.2em;
+  color: #fff;
+  position: absolute;
+  left: 5px;
+  top: 12px;
+  text-align: center;
+  display: block;
+  width: 18px;
+  padding-left: 3px;
+}
+
+.column { /*width: 46%;*/ padding: 0px 0; padding-left: 0px; }
+.column-left { float: left; width: 47%; margin-left: ; }
+.column-right { float: right; width: 47%; padding-left: 5px; margin-right: 0px; }
+
+/*.column-right { display: none; }*/
+
+/* category headings */
+
+img.group-childcare {
+  position: absolute;
+  right: 8px;
+  top: 12px;
+  height: 16px;
+}
+
+.start-category {
+  margin: 0 auto;
+  margin-top: 100px;
+  width: 100%;
+  text-align: center;
+}
+
+.start-category .label {
+  color: #b6b6b6;
+  font-family: "Open Sans Condensed";
+  /*font-style: italic;*/
+  font-size: 1.8em;
+  font-size: 2.27em;
+  text-transform: uppercase;
+  display: block;
+  /*border: solid 1px;*/
+  /*text-indent: 8px;*/
+  padding-top: 13px;
+  margin-bottom: -12px;
+}
+
+.start-category h2 {
+  font-size: 4.55em;
+  font-size: 4.28em;
+  /*font-size: 42.9px;*/
+  /*font-size: 45.5px;*/
+  font-family: "Open Sans";
+  font-weight: 800;
+  font-style: italic;
+  color: #96bee9;
+  margin-top: 15px;
+  margin-left: 0px;
+  /*background: blue;*/
+}
+
+.start-category .category-description {
+  padding-top: 2px;
+  font-size: 1.5em;
+  font-style: italic;
+  font-family: "Crimson Text";
+  color: #848484;
+  width: 65%;
+  display: block;
+  margin-left: 88px;
+  margin-top: 8px;
+
+}
+
+.childcare-key {
+  position: absolute;
+  bottom: 9px;
+  font-size: 1em;
+  color: #96bfe6;
+  left: 115px;
+}
+
+.childcare-key img {
+  height: 16px;
+}
+
+.group {
+  font-size: 1.1em;
+  float: left;
+  width: 50%;
+  overflow: hidden;
+  position: relative;
+}
+
+.group {
+  /*background: url(books-childcare-icon-lg.png) 210px 15px no-repeat;*/
+}
+
+.group.left {
+  width: 49%;
+  margin-right: 1%;
+}
+
+.group.right {
+  width: 49%;
+  margin-left: 1%;
+}
+
+.group .group-name {
+  font-family: "PT Sans";
+  font-size: 1.8em;
+  width: 88%;
+  font-weight: bold;
+  font-style: italic;
+  padding-top: 12px;
+  color: #333333;
+  padding-bottom: 4px;
+}
+
+ul.cat-demo {
+  float: left;
+  width: 100%;
+  margin-bottom: 0px;
+  margin-top: -2px;
+}
+
+ul.cat-demo li {
+  border: solid 1px #818181;
+  float: left;
+  font-size: 1em;
+  padding: 2px 4px;
+  margin-left: 4px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  color: #818181;
+  margin-bottom: 4px;
+}
+
+li.childrens {
+  border: none !important;
+  margin-top: -3px;
+}
+
+.description {
+  clear: both;
+  font-family: "Open Sans Condensed";
+  font-style: italic;
+  font-size: 1.3em;
+  line-height: 1.1;
+  color: #8f8f8f;
+  /*line-height: .9;  */
+}
+
+.leaders {
+  border-top: solid 1px #dedede;
+  float: left;
+  width: 100%;
+  margin: 4px 0 2px;
+  padding-top: 4px;
+}
+
+.leader {
+  float: left;
+  width: 50%;
+  margin-bottom: 2px;
+}
+
+.avatar {
+  border-radius: 50em;
+  width: 30px;
+  height: 30px;
+  padding: 1px;
+  border: solid 1px #d6d6d6;
+  display: block;
+  float: left;
+  margin-left: 5px;
+
+}
+.avatar img {
+  border-radius: 50em;
+  width: 30px;
+}
+
+.leader-name {
+  float: left;
+  width: 62%;
+  margin-left: 4px;
+  margin-top: 5px;
+  font-size: 1.1em;
+  font-weight: bold;
+  font-style: italic;
+  font-family: "PT Sans";
+}
+
+
+.group-label {
+  clear: both;
+  border-top: solid 1px #d6d6d6;
+  font-size: 1.2em;
+  color: #cccccc;
+  font-family: "PT Sans Narrow";
+  width: 100%;
+  float: left;
+  padding-top: 3px;
+  padding-bottom: 2px;
+}
+
+.group-value {
+  width: 94%;
+  clear: left;
+  float: left;
+  margin-left: 6%;
+  font-family: "Open Sans Condensed";
+  color: #8f8f8f;
+  font-size: 1.3em;
+  margin-bottom: 3px;
+}
