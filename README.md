@@ -23,5 +23,6 @@ We had limited timeline and limited resources, so...
 the code is kinda dirty, but it works!
 
 ## Examples
-- You can see a static example here: nathanielwatts.com/books.html (print landscape w/out head/footers)
-- And the PDF: nathanielwatts.com/lifegroups.newlifechurch.pdf
+- You can see a static example here: [nathanielwatts.com/books.html](http://nathanielwatts.com/books/html) (print landscape w/out head/footers)
+- And the PDF:
+  [nathanielwatts.com/lifegroups.newlifechurch.pdf](http://nathanielwatts.com/lifegroups.newlifechurch.pdf)
