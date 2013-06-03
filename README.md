@@ -26,3 +26,6 @@ the code is kinda dirty, but it works!
 - You can see a static example here: [nathanielwatts.com/books.html](http://nathanielwatts.com/books/html) (print landscape w/out head/footers)
 - And the PDF:
   [nathanielwatts.com/lifegroups.newlifechurch.pdf](http://nathanielwatts.com/lifegroups.newlifechurch.pdf)
+- *PLEASE NOTE* Page sorting is "book sorted", so viewing them in a PDF format
+  doesn't do the sorting justice (in fact, it looks incredibly out of order
+  unless printed & folded).
